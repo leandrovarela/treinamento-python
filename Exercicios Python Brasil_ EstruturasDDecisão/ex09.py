@@ -2,13 +2,9 @@ def orden_numbers():
     print("\n---------------Exercício 09-----------------")
     
     num = []
-   
-    num_01=int(input("\nInsira um valor: "))
-    num.append(num_01)
-    num_02=int(input("\nInsira um segundo valor: "))
-    num.append(num_02)
-    num_03=int(input("\nInsira um teceiro valor: "))
-    num.append(num_03)
+    for number in range(3):
+        num.append(int(input("\nInsira um valor: ")))
+        
 
     ordem_crescente= sorted(num)
     
