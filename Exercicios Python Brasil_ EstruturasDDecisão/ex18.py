@@ -39,4 +39,4 @@ def date_validation():
         
         print("Inválida\n")
             
-    
+date_validation()

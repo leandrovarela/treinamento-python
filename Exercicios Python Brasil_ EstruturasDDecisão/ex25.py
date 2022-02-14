@@ -1,41 +1,36 @@
 def detetive():
-  print("\n---------------Exercício 25-----------------")
+    print("\n---------------Exercício 25-----------------")
+    perguntas=["\nTelefonou para a vítima? ","Esteve no local do crime? ","Mora perto da vítima? ","Devia para a vítima? ","Já trabalhou com a vítima? "]
+    resp =[]
 
-  resp =[]
-  print("\nResponda apenas com sim ou não: ")
+    print("\nResponda apenas com sim ou não: ")
+    for pergunta in perguntas:
+        print(pergunta)
+        perg =str(input("Resp: "))
+        
+        if perg == "sim" or perg == "não":
+            resp.append(perg)
+        else: 
+            print("valor inválido")
 
-  a=str(input("\nsTelefonou para a vítima? ").lower())
-  resp.append(a)
+    pontos = resp.count("sim")
 
-  b=str(input("Esteve no local do crime? ").lower())
-  resp.append(b)
+    if pontos == 2:
 
-  c=str(input("Mora perto da vítima? ").lower())
-  resp.append(c)
-  
-  d=str(input("Devia para a vítima? ").lower())
-  resp.append(d)
+        print("\nClassificado como: Suspeito")
 
-  e=str(input("Já trabalhou com a vítima? ").lower())
-  resp.append(e)
+    elif pontos == 3 or pontos == 4:
 
-  pontos = resp.count("sim")
+        print("\nClassificado como: Cúmplice")
 
-  print(f"\nvocê fez {pontos} pontos")
+    elif pontos == 5:
 
-  if pontos == 2:
+        print("\nClassificado como: Assassino")
 
-    print("\nClassificado como: Suspeito")
+    elif pontos == 0 or pontos == 1:
 
-  if pontos == 3 or pontos == 4:
+        print("\nClassificado como: Inocente")
+    else:
 
-    print("\nClassificado como: Cúmplice")
-
-  if pontos == 5:
-
-    print("\nClassificado como: Assassino")
-
-  elif pontos == 0 or pontos == 1:
-
-    print("\nClassificado como: Inocente")
+        print("Valor inválido")
 
