@@ -9,4 +9,3 @@ def print_imp_par():
             impar.append(num_temp)
 
     print(f"Numeros pares ({len(par)}) e numeros pares({len(impar)})")
-print_imp_par()
