@@ -6,7 +6,7 @@ def orden_numbers():
         num.append(int(input("\nInsira um valor: ")))
         
 
-    ordem_crescente= sorted(num)
+    ordem_crescente= sorted(num, reverse=True)
     
     print(f"\n Os numeros inserido em ordem crescente é {ordem_crescente}")
-
+orden_numbers()
