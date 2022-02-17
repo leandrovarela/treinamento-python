@@ -1,34 +1,24 @@
 def payment_pl():
-   print("\n---------------Exercício 11-----------------")
+    print("\n---------------Exercício 11-----------------")
+    salario = float(input("\nDigite o seu salário: R$"))
+    aumento_absoluto = 0
+    aumento_relativo = 0
+    salario_liquido = 0
 
-   salario = float(input("\nDigite o seu salário: R$"))
+    print("Antes Reajuste: ", salario)
 
-   salario_baixo = salario * 0.20
-   final_sal_baixo = salario * 1.20
+    if salario <= 280:
+        aumento_relativo = 0.20
 
-   salario_medio = salario * 0.15
-   final_sal_medio = salario * 1.15
+    elif salario > 200 and salario <= 700:
+        aumento_relativo = 0.15
 
-   salario_alto = salario * 0.10
-   final_sal_alto = salario * 1.10
+    elif salario > 700 and salario <= 1500:
+        aumento_relativo = 0.10
+    else:
 
-   salario_altissimo = salario * 0.05
-   final_sal_alti = salario * 1.05
-
-   print("Antes Reajuste: ", salario)
-
-   if salario <= 280: 
-
-      print("Aumento: 20%\nValor: ", salario_baixo, "\nFinal: ",final_sal_baixo)
-
-   elif salario > 200 and salario <= 700: 
-
-      print("Aumento: 15%\nValor: ", salario_medio, "\nFinal: ", final_sal_medio)
-
-   elif salario > 700 and salario <= 1500: 
-
-      print("Aumento: 10%\nValor: ", salario_alto, "\nFinal: ", final_sal_alto)
-
-   else:
-       print("Aumento: 5%\nValor: ", salario_altissimo, "\nFinal: ", final_sal_alti)
-
+       aumento_relativo = 0.05
+       
+    aumento_absoluto = salario * aumento_relativo
+    salario_liquido = salario * (1 + aumento_relativo)
+    print(f"Aumento: {aumento_relativo * 100}%\nValor: ", aumento_absoluto, "\nFinal: ",salario_liquido)
