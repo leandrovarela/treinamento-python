@@ -1,7 +1,11 @@
-"""def converterData(hora, minuto, indicador):
+def converterData(hora, minuto):
     hour = hora - 12 
     min = minuto
-    indicador= "PM" if hora > 12 
-     else: "AM"
+    indicador = ""
+    return
+    
+def parse(hora, minuto, indicador):
+    indicador= "PM" if hora > 12 else "AM"
+    print(f"{hora}:{minuto} {indicador}")
 
-def parse( hora , minuto):"""
+converterData(19, 45)
