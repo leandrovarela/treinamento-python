@@ -1,7 +1,7 @@
 def positiveNegative(n):
     print("-------------Exercício 04-------------")
     if n >0:
-        resposta = print("P")
+        resposta= print("P")
     else:
-        resposta_2 = print("N")
-    return   
+        resposta= print("N")
+    return
