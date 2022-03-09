@@ -7,5 +7,5 @@ def enes(n):
             sequences += f"{row} "
         print(sequences)
         
-enes(5)       
+   
 

@@ -1,4 +1,4 @@
-from tkinter import N
+
 import ex01
 import ex02
 import ex03
@@ -16,4 +16,9 @@ import ex14
 
 
 
-ex01.enes()
+ex01.enes(5)
+ex02.enes_dois(6)
+ex03.sumTreeNumbers(4,5,7)
+ex04.positiveNegative(9)
+ex05.somaImposta(5,3000)
+   

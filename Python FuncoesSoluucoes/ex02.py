@@ -1,4 +1,4 @@
-def enes(n):
+def enes_dois(n):
 
     for row in range(1, n + 1):
         sequences = ""
@@ -6,5 +6,5 @@ def enes(n):
             sequences += f"{col} "
         print(sequences)
         
-enes(5)       
+   
 

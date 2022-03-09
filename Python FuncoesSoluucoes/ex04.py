@@ -4,5 +4,3 @@ def positiveNegative(n):
     else:
         resposta_2 = print("N")
     return   
-
-positiveNegative(9)

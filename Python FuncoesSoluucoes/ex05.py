@@ -5,4 +5,3 @@ def somaImposta(taxaImposto, custo):
     
     return print(soma)
 
-somaImposta(5, 3000)
