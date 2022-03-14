@@ -1,11 +1,13 @@
-def converterData(hora, minuto):
-    hour = hora - 12 
-    min = minuto
-    indicador = ""
-    return
-    
-def parse(hora, minuto, indicador):
-    indicador= "PM" if hora > 12 else "AM"
-    print(f"{hora}:{minuto} {indicador}")
+def converterData(hora):
 
-converterData(19, 45)
+    return (hora-12)
+
+def imprime_hora(hora,minuto):
+    if(hora <= 12):
+        resultado=print(f"{hora}:{minuto} AM ")
+    else:
+        resultado=print(f"{converterData(hora)}:{minuto} PM ")
+    return resultado
+
+    
+imprime_hora(13,56)
