@@ -1,8 +1,9 @@
 def converterData(hora):
-
-    return (hora-12)
+    convert=hora -12 
+    return convert
 
 def imprime_hora(hora,minuto):
+    print("-------------Exercício 06-------------")
     if(hora <= 12):
         resultado=print(f"{hora}:{minuto} AM ")
     else:
@@ -10,4 +11,3 @@ def imprime_hora(hora,minuto):
     return resultado
 
     
-imprime_hora(13,56)

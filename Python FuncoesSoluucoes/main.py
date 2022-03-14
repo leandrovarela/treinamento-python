@@ -4,7 +4,7 @@ import ex02
 import ex03
 import ex04
 import ex05
-#import ex06
+import ex06
 #import ex07
 #import ex08
 #import ex09
@@ -21,4 +21,4 @@ ex02.enes_dois(6)
 print(ex03.sumTreeNumbers(4,5,7))
 ex04.positiveNegative(-2)
 print(ex05.somaImposta(5,3000))
-   
+ex06.imprime_hora(17,45)   
