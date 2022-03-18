@@ -5,8 +5,8 @@ import ex03
 import ex04
 import ex05
 import ex06
-#import ex07
-#import ex08
+import ex07
+import ex08
 #import ex09
 #import ex10
 #import ex11
@@ -21,4 +21,6 @@ ex02.enes_dois(6)
 print(ex03.sumTreeNumbers(4,5,7))
 ex04.positiveNegative(-2)
 print(ex05.somaImposta(5,3000))
-ex06.imprime_hora(17,45)   
+ex06.imprime_hora(17,45)
+print(ex07.valorPagamento(valorFatura,diasAtraso))
+ex08.inteiros()
