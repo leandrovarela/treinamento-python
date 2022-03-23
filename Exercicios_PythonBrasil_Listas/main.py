@@ -29,8 +29,8 @@ import ex24
 ex01.five_numbers_int()
 ex02.ten_numbers_reals()
 ex03.man_or_woman()
-ex04.vogal_or_consoante()
-ex05.vetor_par_impar()
+ex04.format_print()
+ex05.imprime_vetores()
 ex06.main()
 ex07.sum_mult_print()
 ex08.age_height()
@@ -40,14 +40,10 @@ ex11.listas_intercaladas_plus()
 ex12.media_members()
 ex13.fire_of_years()
 ex14.investigation()
-ex15.
-ex16.
+
 ex17.media_saltos()
-ex18.
+
 ex19.enquete()
-ex20.
-ex21.
-ex22.
-ex23. 
+
 ex24.mult_dados()
 

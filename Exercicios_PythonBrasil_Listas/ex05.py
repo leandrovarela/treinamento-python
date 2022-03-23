@@ -1,18 +1,19 @@
 
-def vetor_par_impar():
-    print("\n---------------Exercício 05-----------------")
-    vetor =[]
-    par=[]
-    impar =[]
+def eh_par(numero):
+    return numero %2 == 0
 
-    for numeros in range(20):
-        num = int(input("\nInsira um numero inteiro: "))
-        vetor.append(num)
-        if num % 2 == 0:
-            par.append(num)
-        else:
-            impar.append(num)
-    print(f"Os números do vetor são {vetor}")
-    print(f"Os números pares são {par}")
-    print(f"Os números impares são {impar}")
-vetor_par_impar()
+def separa_pares_e_impares(lista_numeros):
+    pares = list(filter(eh_par,lista_numeros))
+    impares = list(filter(lambda x: not(eh_par(x)), lista_numeros))
+    
+    return pares, impares
+    
+def imprime_vetores(vetor_original, pares, impares):
+    print("\n---------------Exercício 05-----------------")
+    print(f"Os números do vetor são {vetor_original}")
+    print(f"Os números pares são {pares}")
+    print(f"Os números impares são {impares}")
+    
+
+lista = [1,90,45,13,4,7,13]
+imprime_vetores(lista, *separa_pares_e_impares(lista))

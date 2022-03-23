@@ -1,11 +1,16 @@
-def vogal_or_consoante():
-    print("\n---------------Exercício 04-----------------")
-    vogal=["a","e","i","o","u"]
-    consoante =[]
-    for caracteres in range(10):
-        caract=str(input("\nInsira um caracter: "))
-        if caract not in vogal:
-            consoante.append(caract)
+def separa_consoantes(lista_caracteres):
+    vogais=["a","e","i","o","u"]
+    
+    consoante = lambda item : item.lower() not in vogais
+    #Mesma coisa do codigo abaixo
+    # def consoante(item):
+    #     return item not in vogais
+    return list(filter(consoante, lista_caracteres))
+    
+def format_print(consoantes):
+    
+    print(f"\nForam lidas {len(consoantes)} consoantes: {consoantes} ")       
 
-    print(f"\nForam lidas {len(consoante)} consoantes ")       
-vogal_or_consoante()            
+consoantes = separa_consoantes(['b', 'N', 'y', 'i', 'o', 'x', "I"])
+format_print(consoantes)
+       

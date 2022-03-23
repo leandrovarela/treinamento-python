@@ -1,13 +1,14 @@
-def age_height():
-   print("\n---------------Exercício 08-----------------")
-   altura=[]
-   idade= []
-   for pessoa in range (1, 6):
-      idade.append(int(input(f"\nDigite a idade da pessoa {pessoa}: ")))
-      altura.append(float(input(f"Digite sua altura da pessoa {pessoa}: ")))
-   
-   idade.reverse()
-   altura.reverse() 
-   print(f" \nA lista dos dados das pessoas invertida:  Idade {idade}, altura {altura}")
+def merge_age_and_height(ages, heights):
+    return reversed(list(zip(ages,heights)))
+    
+def print_age_and_height(ages_and_heights):
+    for pair in ages_and_heights:
+        print(f"Idade {pair[0]}, altura {pair[1]}")
+    
 
-age_height()
+ages = [34, 25, 26]
+heights = [176, 165, 190]
+print_age_and_height(merge_age_and_height(ages, heights))
+
+
+

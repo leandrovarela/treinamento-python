@@ -8,5 +8,4 @@ def man_or_woman():
 
     result= sum(notas) / len(notas) 
     print (f"A média é {result} e as notas são {notas}")
-man_or_woman()
 
