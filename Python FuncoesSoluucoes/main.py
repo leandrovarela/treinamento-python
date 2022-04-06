@@ -8,11 +8,11 @@ import ex06
 import ex07
 import ex08
 import ex09
-#import ex10
-#import ex11
-#import ex12
-#import ex13
-#import ex14
+import ex10
+import ex11
+import ex12
+import ex13
+import ex14
 
 
 
@@ -25,3 +25,6 @@ ex06.imprime_hora(17,45)
 ex07.valorPagamento()
 ex08.inteiros()
 ex09.inverseInt()
+ex10.craps()
+print(ex11.data('10/12/2000'))
+print(ex12.embaralha('TESTE'))
