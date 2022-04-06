@@ -12,4 +12,4 @@ def sum_elements_square():
     final=sum(resultados)
     print(f"O resultado da soma dos Quadrados dos elementos é {final}")
 
-sum_elements_square()
+

@@ -15,4 +15,3 @@ def triangule():
         
         print(elemento)
 
-triangule()

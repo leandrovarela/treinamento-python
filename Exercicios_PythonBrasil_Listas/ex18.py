@@ -1,21 +1,19 @@
-from cgi import print_directory
+
 
 
 votos=[]
 
 def vote_count():
-    voto=[]
     option=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]
-    while True:
-        contagem=int(input("Número do jogador (0=fim): ")) 
+    contagem=int(input("Número do jogador (0=fim): "))
+    for i in range():
+
         if contagem == 0 :
             break
-        elif contagem in option:
-            voto.append(contagem)
-        else:
+        elif contagem not in option: 
             print("Valor inválido")
 
-    return voto
+        return votos.append(contagem)
 
 def print_status():
     voto=votos

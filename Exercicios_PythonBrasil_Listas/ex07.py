@@ -13,5 +13,5 @@ def sum_mult_print():
     print(f" A soma dos elementos é : {soma}  e a Multiplicação é : {multi} ")
     print(f"E os numeros foram {num}")
     
-sum_mult_print()   
+
    

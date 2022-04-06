@@ -23,4 +23,4 @@ def calcula_media(notas):
     media.append(media_final)
     
     
-calcula_notas()
+
