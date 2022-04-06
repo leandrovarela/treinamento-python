@@ -11,4 +11,3 @@ def data(data):
 
     novaData = str(dia) + ' de ' + meses[mes - 1] +' de ' + str(ano)
     return novaData
-print(data('10/12/2000'))
