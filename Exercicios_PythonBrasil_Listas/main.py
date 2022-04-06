@@ -44,6 +44,6 @@ ex14.investigation()
 ex17.media_saltos()
 
 ex19.enquete()
-
+ex20.calculate_all_abonos()
 ex24.mult_dados()
 
