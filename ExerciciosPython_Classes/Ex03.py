@@ -12,12 +12,11 @@ class Retangulo:
         return new_largura
 
     def mostra_medidas(self):
-        print(f"As medidas do Retângulo são:\n {self.comprimento()} cm de Comprimento e {self.largura()} cm de Largura")
-    
+        print(f"As medidas do Retângulo são:")
+        return self.comprimento,self.largura
 
     def calcula_area(self):
         area= self.comprimento * self.largura
-        print(f'{area}m²')
         return area
 
     def calcula_perimetro(self):
@@ -34,7 +33,10 @@ print(a.calcula_perimetro())
 print(a.calcula_area())
 print(a.altera_comprimento(9))
 print(a.altera_largura(10))
+print(a.mostra_medidas())
+print(a.calcula_perimetro())
+print(a.calcula_area())
 
-print (f'serão necessários {a.calcula_area()}m² quadrado(s) de piso e {a.calcula_perimetro()}m de rodapés para suprir o local')
+print (f"serão necessários {a.calcula_area()}m² quadrado(s) de piso e {a.calcula_perimetro()}m de rodapés para suprir o local")
 
  
