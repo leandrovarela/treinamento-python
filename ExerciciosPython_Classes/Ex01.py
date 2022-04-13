@@ -12,6 +12,14 @@ class Bola:
         return new_cor
 
     def mostra_cor(self):
-        mostrar = self.cor
-        return mostrar
-print(Bola.mostra_cor("Amarelo"))
+        return self.cor
+
+b= Bola("Amarelo","33mm","Couro")      
+b2= Bola("Verde","34mm","Borracha")      
+b3= Bola("Cinza","35mm","Couro Sintético")
+
+print(b.mostra_cor())
+print(b2.mostra_cor())
+print(b3.mostra_cor())
+print(b.troca_cor("Vermelho"))
+print(b.mostra_cor())
